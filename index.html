@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./css/Login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login Form</title>
+	
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form action="Verify.php" method="post">
+				<br>
+				<img src="./css/img/Logo.png" id="form_logo" alt="Italian Trulli">
+				<!-- <h1>Login</h1> -->
+                <!-- <br><br> -->
+				
+				<input type="text" name="Registration_number" class="inputbox" placeholder="Registration Number" />
+				<input type="password" name="Password" class="inputbox" placeholder="Password" />
+				<input type="hidden" name="Question_number" id="Question_number" value="1">
+				<br>
+				<input type="submit" class="Login" value="Log In">
+			
+				
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>Code in Dark</h1>
+					<p>Illuminate your Imagination </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	let x=document.getElementById("Question_number").innerHTML="1";
+</script>
+</html>
